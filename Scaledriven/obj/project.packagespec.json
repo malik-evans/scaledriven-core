@@ -37,11 +37,23 @@
           "target": "Package",
           "version": "[2.2.0, )"
         },
+        "Microsoft.AspNetCore.SpaServices": {
+          "target": "Package",
+          "version": "[2.2.0, )"
+        },
+        "Microsoft.EntityFrameworkCore": {
+          "target": "Package",
+          "version": "[2.2.3, )"
+        },
         "Microsoft.NETCore.App": {
           "suppressParent": "All",
           "target": "Package",
           "version": "[2.2.0, )",
           "autoReferenced": true
+        },
+        "Swashbuckle.AspNetCore": {
+          "target": "Package",
+          "version": "[4.0.1, )"
         }
       },
       "imports": [

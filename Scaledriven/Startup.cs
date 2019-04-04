@@ -23,6 +23,7 @@ namespace Scaledriven
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddDbContext<ApplicationDbContext>(options => { options.UseInMemoryDatabase("Application_Db"); });
+            services.AddSpaStaticFiles(options => { options.RootPath = "ClientApp/dist"; });
 
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen(c =>
@@ -45,6 +46,7 @@ namespace Scaledriven
                 app.UseHsts();
             }
 
+            app.UseSpaStaticFiles();
             // Enable middleware to serve generated Swagger as a JSON endpoint.
             app.UseSwagger();
 
@@ -53,8 +55,9 @@ namespace Scaledriven
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
-                c.RoutePrefix = string.Empty;
+                c.RoutePrefix = "swagger";
             });
+
 
             app.UseHttpsRedirection();
             app.UseMvc();

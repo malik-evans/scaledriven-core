@@ -1,0 +1,14 @@
+/Users/andrew/RiderProjects/Scaledriven/Scaledriven/bin/Debug/netcoreapp2.2/Scaledriven.deps.json
+/Users/andrew/RiderProjects/Scaledriven/Scaledriven/bin/Debug/netcoreapp2.2/Scaledriven.runtimeconfig.json
+/Users/andrew/RiderProjects/Scaledriven/Scaledriven/bin/Debug/netcoreapp2.2/Scaledriven.runtimeconfig.dev.json
+/Users/andrew/RiderProjects/Scaledriven/Scaledriven/bin/Debug/netcoreapp2.2/Scaledriven.dll
+/Users/andrew/RiderProjects/Scaledriven/Scaledriven/bin/Debug/netcoreapp2.2/Scaledriven.pdb
+/Users/andrew/RiderProjects/Scaledriven/Scaledriven/obj/Debug/netcoreapp2.2/Scaledriven.csprojAssemblyReference.cache
+/Users/andrew/RiderProjects/Scaledriven/Scaledriven/obj/Debug/netcoreapp2.2/Scaledriven.csproj.CoreCompileInputs.cache
+/Users/andrew/RiderProjects/Scaledriven/Scaledriven/obj/Debug/netcoreapp2.2/Scaledriven.RazorAssemblyInfo.cache
+/Users/andrew/RiderProjects/Scaledriven/Scaledriven/obj/Debug/netcoreapp2.2/Scaledriven.RazorAssemblyInfo.cs
+/Users/andrew/RiderProjects/Scaledriven/Scaledriven/obj/Debug/netcoreapp2.2/Scaledriven.AssemblyInfoInputs.cache
+/Users/andrew/RiderProjects/Scaledriven/Scaledriven/obj/Debug/netcoreapp2.2/Scaledriven.AssemblyInfo.cs
+/Users/andrew/RiderProjects/Scaledriven/Scaledriven/obj/Debug/netcoreapp2.2/Scaledriven.RazorTargetAssemblyInfo.cache
+/Users/andrew/RiderProjects/Scaledriven/Scaledriven/obj/Debug/netcoreapp2.2/Scaledriven.dll
+/Users/andrew/RiderProjects/Scaledriven/Scaledriven/obj/Debug/netcoreapp2.2/Scaledriven.pdb

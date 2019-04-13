@@ -1,16 +1,17 @@
 ﻿using System.Linq;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Scaledriven.Database;
 using Scaledriven.Models;
 
 namespace Scaledriven.Controllers
 {
-    [Route("api/[controller]")]
+
     [ApiController]
-    public class ValuesController : ControllerBase
+    [Route("api/[controller]")]
+    public class ValuesController
     {
-        protected ApplicationDbContext _applicationDbContext { get; set; }
+
+        protected readonly ApplicationDbContext _applicationDbContext;
 
         public ValuesController(ApplicationDbContext applicationDbContext)
         {

@@ -12,3 +12,14 @@
 /Users/andrew/RiderProjects/Scaledriven/Scaledriven/obj/Debug/netcoreapp2.2/Scaledriven.RazorTargetAssemblyInfo.cache
 /Users/andrew/RiderProjects/Scaledriven/Scaledriven/obj/Debug/netcoreapp2.2/Scaledriven.dll
 /Users/andrew/RiderProjects/Scaledriven/Scaledriven/obj/Debug/netcoreapp2.2/Scaledriven.pdb
+/Users/andrew/RiderProjects/Scaledriven/Scaledriven/bin/Debug/netcoreapp2.2/Scaledriven.Views.dll
+/Users/andrew/RiderProjects/Scaledriven/Scaledriven/bin/Debug/netcoreapp2.2/Scaledriven.Views.pdb
+/Users/andrew/RiderProjects/Scaledriven/Scaledriven/obj/Debug/netcoreapp2.2/Scaledriven.TagHelpers.input.cache
+/Users/andrew/RiderProjects/Scaledriven/Scaledriven/obj/Debug/netcoreapp2.2/Scaledriven.TagHelpers.output.cache
+/Users/andrew/RiderProjects/Scaledriven/Scaledriven/obj/Debug/netcoreapp2.2/Scaledriven.RazorCoreGenerate.cache
+/Users/andrew/RiderProjects/Scaledriven/Scaledriven/obj/Debug/netcoreapp2.2/Scaledriven.RazorTargetAssemblyInfo.cs
+/Users/andrew/RiderProjects/Scaledriven/Scaledriven/obj/Debug/netcoreapp2.2/Scaledriven.Views.pdb
+/Users/andrew/RiderProjects/Scaledriven/Scaledriven/obj/Debug/netcoreapp2.2/Scaledriven.csproj.CopyComplete
+/Users/andrew/RiderProjects/Scaledriven/Scaledriven/obj/Debug/netcoreapp2.2/Razor/Pages/Index.g.cshtml.cs
+/Users/andrew/RiderProjects/Scaledriven/Scaledriven/bin/Debug/netcoreapp2.2/Scaledriven.xml
+/Users/andrew/RiderProjects/Scaledriven/Scaledriven/obj/Debug/netcoreapp2.2/Scaledriven.xml

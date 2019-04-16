@@ -1,0 +1,25 @@
+@page
+@{
+    Layout = "Shared/_Layout";
+}
+
+@section Head {
+    <base href="/Dashboard" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="home/styles.css">
+}
+
+<app-root></app-root>
+    
+@section Scripts {
+    <script type="text/javascript" src="home/runtime.js"></script>
+    <script type="text/javascript" src="home/es2015-polyfills.js" nomodule></script>
+    <script type="text/javascript" src="home/polyfills.js"></script>
+    <script type="text/javascript" src="home/vendor.js"></script>
+    <script type="text/javascript" src="home/main.js"></script>
+}
+

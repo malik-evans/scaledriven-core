@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>@ViewData["Title"]</title>
+        @RenderSection("Head", required: false)
+        <link href="styles/semantic.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+    <div class="ui green grid">
+        <div class="row">
+            <div class="ui two item menu fluid">
+                <a asp-page="/Index" class="item">Home</a>
+                <a asp-page="/Dashboard" class="item">Dashboard</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="four wide column"></div>
+            <div class="ten wide column">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+    
+    @RenderSection("Scripts", required: false)
+    </body>
+</html>

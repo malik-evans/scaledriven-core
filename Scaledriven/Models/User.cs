@@ -26,10 +26,9 @@ namespace Scaledriven.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public long UserId { get; set; }
+        public string UserId { get; set; }
 
         [Required]
-        [Description("First name of application user")]
         public string FirstName { get; set; }
 
         [Required]

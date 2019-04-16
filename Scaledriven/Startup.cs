@@ -6,11 +6,12 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using MySql.Data.EntityFrameworkCore.Extensions;
+using Scaledriven.Areas.Messaging.Models;
+using Scaledriven.Areas.Messaging.Services;
 using Scaledriven.Database;
+using Scaledriven.Interfaces;
 using Scaledriven.Services;
 using Swashbuckle.AspNetCore.Swagger;
 
@@ -36,14 +37,9 @@ namespace Scaledriven
 
             services.AddSpaStaticFiles(options => { options.RootPath = "ClientApp/dist"; });
             services.AddHttpClient<IGitHubApiService, GithubService>();
+            services.AddScoped<ICreator<Message>, MessageFactory<Message>>();
 
-            services
-                .AddEntityFrameworkMySQL()
-                .AddDbContext<ApplicationDbContext>(options =>
-                {
-                    options.UseMySQL(Configuration.GetConnectionString("App"));
-                });
-            services.AddEntityFrameworkMySQL();
+            services.AddDbContext<ApplicationDbContext>();
 
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen(c =>
@@ -76,6 +72,7 @@ namespace Scaledriven
             }
 
             app.UseSpaStaticFiles();
+            app.UseStaticFiles();
             // Enable middleware to serve generated Swagger as a JSON endpoint.
             app.UseSwagger();
 
@@ -88,8 +85,17 @@ namespace Scaledriven
             });
 
             app.UseHttpsRedirection();
-            app.UseMvc();
-
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(
+                    name: "area_routes",
+                    template: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+                
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller=Home}/{action=Index}/{id?}");
+            });
+            
             app.Run((HttpContext context) =>
             {
                 return Task.Run(() =>

@@ -24,4 +24,8 @@
       <_ContentIncludedByDefault Remove="Pages\Index.cshtml" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Controllers\Areas" />
+    </ItemGroup>
+
 </Project>

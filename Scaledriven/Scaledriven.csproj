@@ -22,10 +22,12 @@
 
     <ItemGroup>
       <_ContentIncludedByDefault Remove="Pages\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="ClientApp\dist\fashion\fashion.metadata.json" />
+      <_ContentIncludedByDefault Remove="ClientApp\dist\fashion\package.json" />
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Controllers\Areas" />
+      <Folder Include="Controllers" />
     </ItemGroup>
 
 </Project>

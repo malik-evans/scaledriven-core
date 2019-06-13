@@ -1,24 +1,22 @@
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace Scaledriven.Models
 {
 
     public class CreateUserModel
     {
-        public CreateUserModel()
-        {
-        }
 
         [Required]
-        public string Email { get; set; }
+        [DefaultValue("Root")]
+        public string Username { get; set; }
 
         [Required]
-        public bool IsActive { get; set; }
-
-        [Required]
-        public string FirstName { get; set; }
+        [DefaultValue("Password")]
+        public string Password { get; set; }
 
     }
 
@@ -28,10 +26,16 @@ namespace Scaledriven.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public string UserId { get; set; }
 
-        [Required]
         public string FirstName { get; set; }
 
-        [Required]
+        public string LastName { get; set; }
+
+        public string Username { get; set; }
+
+        public string Password { get; set; }
+
+        public string Token { get; set; }
+
         public string Address { get; set; }
 
         [Required]
@@ -39,14 +43,14 @@ namespace Scaledriven.Models
 
         public string Birthday { get; set; }
 
-        [Required]
         public string Email { get; set; }
 
         public string Gender { get; set; }
 
         public string Website { get; set; }
 
-        public User[] Friends { get; set; }
+        public ICollection<User> Friends { get; set; }
+
 
     }
 }

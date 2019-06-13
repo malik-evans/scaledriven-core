@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/Users/admin/RiderProjects/scaledriven-core/Scaledriven/Scaledriven.csproj",
+    "projectUniqueName": "/Users/andrew/RiderProjects/Scaledriven/Scaledriven/Scaledriven.csproj",
     "projectName": "Scaledriven",
-    "projectPath": "/Users/admin/RiderProjects/scaledriven-core/Scaledriven/Scaledriven.csproj",
-    "outputPath": "/Users/admin/RiderProjects/scaledriven-core/Scaledriven/obj/",
+    "projectPath": "/Users/andrew/RiderProjects/Scaledriven/Scaledriven/Scaledriven.csproj",
+    "outputPath": "/Users/andrew/RiderProjects/Scaledriven/Scaledriven/obj/",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

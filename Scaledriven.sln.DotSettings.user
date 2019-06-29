@@ -4,4 +4,6 @@
   &lt;Assembly Path="/usr/local/share/dotnet/sdk/NuGetFallbackFolder/microsoft.netcore.app/2.2.0/ref/netcoreapp2.2/System.Drawing.Primitives.dll" /&gt;
   &lt;Assembly Path="/Users/andrew/.nuget/packages/swashbuckle.aspnetcore.swagger/4.0.1/lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.dll" /&gt;
   &lt;Assembly Path="/Users/andrew/.nuget/packages/swashbuckle.aspnetcore.swaggergen/4.0.1/lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerGen.dll" /&gt;
-&lt;/AssemblyExplorer&gt;</s:String></wpf:ResourceDictionary>
+&lt;/AssemblyExplorer&gt;</s:String>
+	<s:Boolean x:Key="/Default/UnloadedProject/UnloadedProjects/=8e70feb7_002D3ff7_002D4e0a_002D875f_002D1fe85b096375_0023Scaledriven_002EApi/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UnloadedProject/UnloadedProjects/=9c87e735_002D75d2_002D4b6a_002D8f98_002D196f3ac98c4f_0023Scaledriven_002ETests/@EntryIndexedValue">True</s:Boolean></wpf:ResourceDictionary>

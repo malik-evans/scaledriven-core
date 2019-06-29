@@ -4235,9 +4235,9 @@
         "framework": ".NETCoreApp,Version=v2.2",
         "dependencies": {
           "Faker.Net": "1.1.1",
-          "Microsoft.AspNetCore.SpaServices": "2.2.0",
           "Microsoft.EntityFrameworkCore": "2.2.3",
           "MySql.Data.EntityFrameworkCore": "8.0.15",
+          "Scaledriven.Core": "1.0.0",
           "Swashbuckle.AspNetCore": "4.0.1"
         },
         "compile": {
@@ -4245,6 +4245,19 @@
         },
         "runtime": {
           "bin/placeholder/Scaledriven.Api.dll": {}
+        }
+      },
+      "Scaledriven.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "Microsoft.AspNetCore": "2.2.0"
+        },
+        "compile": {
+          "bin/placeholder/Scaledriven.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Scaledriven.Core.dll": {}
         }
       }
     }
@@ -12163,6 +12176,11 @@
       "type": "project",
       "path": "../Scaledriven.Api/Scaledriven.Api.csproj",
       "msbuildProject": "../Scaledriven.Api/Scaledriven.Api.csproj"
+    },
+    "Scaledriven.Core/1.0.0": {
+      "type": "project",
+      "path": "../Scaledriven.Core/Scaledriven.Core.csproj",
+      "msbuildProject": "../Scaledriven.Core/Scaledriven.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {

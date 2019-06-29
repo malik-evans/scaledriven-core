@@ -3,4 +3,5 @@
 	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer&gt;
   &lt;Assembly Path="/usr/local/share/dotnet/sdk/NuGetFallbackFolder/microsoft.netcore.app/2.2.0/ref/netcoreapp2.2/System.Drawing.Primitives.dll" /&gt;
   &lt;Assembly Path="/Users/andrew/.nuget/packages/swashbuckle.aspnetcore.swagger/4.0.1/lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.dll" /&gt;
+  &lt;Assembly Path="/Users/andrew/.nuget/packages/swashbuckle.aspnetcore.swaggergen/4.0.1/lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerGen.dll" /&gt;
 &lt;/AssemblyExplorer&gt;</s:String></wpf:ResourceDictionary>

@@ -13,6 +13,7 @@ using Scaledriven.Api.Helpers;
 using Scaledriven.Api.Services;
 using Scaledriven.Api.Areas.App.Shared;
 using Scaledriven.Api.Database;
+using Scaledriven.Core.AspNetCore.Extensions;
 using Swashbuckle.AspNetCore.Swagger;
 
 namespace Scaledriven.Api
@@ -37,6 +38,8 @@ namespace Scaledriven.Api
             // settings
             services.Configure<AppSettings>(Configuration.GetSection("AppSettings"));
 
+            services.AddScaledriven();
+
             // configure mvc & services
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
@@ -52,6 +55,7 @@ namespace Scaledriven.Api
             // db context
             services.AddDbContext<ApplicationDbContext>();
 
+
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen(c =>
                 {
@@ -65,27 +69,6 @@ namespace Scaledriven.Api
                     var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
                     var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
                     c.IncludeXmlComments(xmlPath);
-                });
-
-            // user token auth
-            Byte[] key = Encoding.UTF8.GetBytes("Mantle");
-            services
-                .AddAuthentication(x =>
-                {
-                    x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-                    x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-                })
-                .AddJwtBearer(x =>
-                {
-                    x.RequireHttpsMetadata = true;
-                    x.SaveToken = true;
-                    x.TokenValidationParameters = new TokenValidationParameters
-                    {
-                        ValidateIssuerSigningKey = true,
-                        IssuerSigningKey = new SymmetricSecurityKey(key),
-                        ValidateIssuer = false,
-                        ValidateAudience = false
-                    };
                 });
 
         }
@@ -109,9 +92,6 @@ namespace Scaledriven.Api
                 .AllowAnyMethod());
 
             app.UseHttpsRedirection();
-
-            app.UseSpaStaticFiles();
-            app.UseStaticFiles();
 
             // Enable middleware to serve generated Swagger as a JSON endpoint.
             app.UseSwagger();

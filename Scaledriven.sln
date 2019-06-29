@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scaledriven.Api", "Scaledriven.Api\Scaledriven.Api.csproj", "{8E70FEB7-3FF7-4E0A-875F-1FE85B096375}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scaledriven.Tests", "Scaledriven.Tests\Tests.csproj", "{9C87E735-75D2-4B6A-8F98-196F3AC98C4F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scaledriven.Tests", "Scaledriven.Tests\Scaledriven.Tests.csproj", "{9C87E735-75D2-4B6A-8F98-196F3AC98C4F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

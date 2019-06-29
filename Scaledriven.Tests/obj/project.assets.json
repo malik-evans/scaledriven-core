@@ -4230,7 +4230,7 @@
           "build/netcoreapp1.0/xunit.runner.visualstudio.props": {}
         }
       },
-      "Scaledriven/1.0.0": {
+      "Scaledriven.Api/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
         "dependencies": {
@@ -4241,10 +4241,10 @@
           "Swashbuckle.AspNetCore": "4.0.1"
         },
         "compile": {
-          "bin/placeholder/Scaledriven.dll": {}
+          "bin/placeholder/Scaledriven.Api.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Scaledriven.dll": {}
+          "bin/placeholder/Scaledriven.Api.dll": {}
         }
       }
     }
@@ -12159,10 +12159,10 @@
         "xunit.runner.visualstudio.nuspec"
       ]
     },
-    "Scaledriven/1.0.0": {
+    "Scaledriven.Api/1.0.0": {
       "type": "project",
-      "path": "../Scaledriven/Scaledriven.csproj",
-      "msbuildProject": "../Scaledriven/Scaledriven.csproj"
+      "path": "../Scaledriven.Api/Scaledriven.Api.csproj",
+      "msbuildProject": "../Scaledriven.Api/Scaledriven.Api.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -12178,7 +12178,7 @@
       "Microsoft.Extensions.Http >= 2.2.0",
       "Microsoft.NET.Test.Sdk >= 16.0.1",
       "Microsoft.NETCore.App >= 2.2.0",
-      "Scaledriven >= 1.0.0",
+      "Scaledriven.Api >= 1.0.0",
       "xunit >= 2.4.0",
       "xunit.runner.visualstudio >= 2.4.0"
     ]
@@ -12190,11 +12190,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/andrew/RiderProjects/Scaledriven/Tests/Tests.csproj",
-      "projectName": "Tests",
-      "projectPath": "/Users/andrew/RiderProjects/Scaledriven/Tests/Tests.csproj",
+      "projectUniqueName": "/Users/andrew/RiderProjects/Scaledriven/Scaledriven.Tests/Scaledriven.Tests.csproj",
+      "projectName": "Scaledriven.Tests",
+      "projectPath": "/Users/andrew/RiderProjects/Scaledriven/Scaledriven.Tests/Scaledriven.Tests.csproj",
       "packagesPath": "/Users/andrew/.nuget/packages/",
-      "outputPath": "/Users/andrew/RiderProjects/Scaledriven/Tests/obj/",
+      "outputPath": "/Users/andrew/RiderProjects/Scaledriven/Scaledriven.Tests/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -12211,8 +12211,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "/Users/andrew/RiderProjects/Scaledriven/Scaledriven/Scaledriven.csproj": {
-              "projectPath": "/Users/andrew/RiderProjects/Scaledriven/Scaledriven/Scaledriven.csproj"
+            "/Users/andrew/RiderProjects/Scaledriven/Scaledriven.Api/Scaledriven.Api.csproj": {
+              "projectPath": "/Users/andrew/RiderProjects/Scaledriven/Scaledriven.Api/Scaledriven.Api.csproj"
             }
           }
         }

@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace Scaledriven.Controllers
+namespace Scaledriven.Api.Controllers
 {
     [Route("api/[Controller]")]
     public class HomeController : ControllerBase

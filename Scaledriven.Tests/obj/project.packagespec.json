@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/Users/andrew/RiderProjects/Scaledriven/Tests/Tests.csproj",
-    "projectName": "Tests",
-    "projectPath": "/Users/andrew/RiderProjects/Scaledriven/Tests/Tests.csproj",
-    "outputPath": "/Users/andrew/RiderProjects/Scaledriven/Tests/obj/",
+    "projectUniqueName": "/Users/andrew/RiderProjects/Scaledriven/Scaledriven.Tests/Scaledriven.Tests.csproj",
+    "projectName": "Scaledriven.Tests",
+    "projectPath": "/Users/andrew/RiderProjects/Scaledriven/Scaledriven.Tests/Scaledriven.Tests.csproj",
+    "outputPath": "/Users/andrew/RiderProjects/Scaledriven/Scaledriven.Tests/obj/",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -15,8 +15,8 @@
     "frameworks": {
       "netcoreapp2.2": {
         "projectReferences": {
-          "/Users/andrew/RiderProjects/Scaledriven/Scaledriven/Scaledriven.csproj": {
-            "projectPath": "/Users/andrew/RiderProjects/Scaledriven/Scaledriven/Scaledriven.csproj"
+          "/Users/andrew/RiderProjects/Scaledriven/Scaledriven.Api/Scaledriven.Api.csproj": {
+            "projectPath": "/Users/andrew/RiderProjects/Scaledriven/Scaledriven.Api/Scaledriven.Api.csproj"
           }
         }
       }

@@ -1,4 +1,4 @@
-namespace Scaledriven.Helpers
+namespace Scaledriven.Api.Helpers
 {
     public class AppSettings
     {

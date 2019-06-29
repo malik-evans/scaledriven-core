@@ -9,13 +9,13 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
-using Scaledriven.Database;
-using Scaledriven.Helpers;
-using Scaledriven.Services;
-using Scaledriven.Shared;
+using Scaledriven.Api.Database;
+using Scaledriven.Api.Helpers;
+using Scaledriven.Api.Services;
+using Scaledriven.Api.Shared;
 using Swashbuckle.AspNetCore.Swagger;
 
-namespace Scaledriven
+namespace Scaledriven.Api
 {
     public class Startup
     {

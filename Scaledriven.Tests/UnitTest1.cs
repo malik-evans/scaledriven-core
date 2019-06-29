@@ -3,14 +3,14 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Xunit;
 
-namespace Tests
+namespace Scaledriven.Api.Tests
 {
-    public class UnitTest1 : IClassFixture<WebApplicationFactory<Scaledriven.Startup>>
+    public class UnitTest1 : IClassFixture<WebApplicationFactory<Startup>>
     {
-        private readonly WebApplicationFactory<Scaledriven.Startup> _factory;
+        private readonly WebApplicationFactory<Startup> _factory;
         public const string BaseUri = "http://localhost/";
 
-        public UnitTest1(WebApplicationFactory<Scaledriven.Startup> applicationFactory)
+        public UnitTest1(WebApplicationFactory<Startup> applicationFactory)
         {
             _factory = applicationFactory;
         }

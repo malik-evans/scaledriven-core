@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Scaledriven.Models
+namespace Scaledriven.Api.Models
 {
 
 

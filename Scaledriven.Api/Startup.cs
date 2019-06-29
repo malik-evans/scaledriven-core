@@ -43,9 +43,6 @@ namespace Scaledriven.Api
             // configure mvc & services
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
-            // static file service
-            services.AddSpaStaticFiles(options => { options.RootPath = "ClientApp/dist"; });
-
             // http services
             services.AddHttpClient<IGitHubApiService, GithubService>();
 
@@ -105,15 +102,7 @@ namespace Scaledriven.Api
             });
 
             app.UseMvc(routes =>
-            {
-                routes.MapRoute(
-                    name: "areaRoutes",
-                    template: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
-
-                routes.MapRoute(
-                    name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
-            });
+                routes.MapRoute( name: "areaRoutes", template: "{area:exists=App/Info}/{controller=Home}/{action=Index}/{id?}"));
 
         }
     }

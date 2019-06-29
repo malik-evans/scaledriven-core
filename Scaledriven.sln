@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scaledriven.Api", "Scaledri
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scaledriven.Tests", "Scaledriven.Tests\Scaledriven.Tests.csproj", "{9C87E735-75D2-4B6A-8F98-196F3AC98C4F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scaledriven.Core", "Scaledriven.Core\Scaledriven.Core.csproj", "{8DF9255F-8C7B-496B-9ADA-8B29AE3F6B09}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{9C87E735-75D2-4B6A-8F98-196F3AC98C4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C87E735-75D2-4B6A-8F98-196F3AC98C4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C87E735-75D2-4B6A-8F98-196F3AC98C4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DF9255F-8C7B-496B-9ADA-8B29AE3F6B09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DF9255F-8C7B-496B-9ADA-8B29AE3F6B09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DF9255F-8C7B-496B-9ADA-8B29AE3F6B09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DF9255F-8C7B-496B-9ADA-8B29AE3F6B09}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

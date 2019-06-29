@@ -13,7 +13,7 @@ namespace Scaledriven.Api.Database
         {
             base.OnConfiguring(optionsBuilder);
 
-            optionsBuilder.UseInMemoryDatabase("App");
+            optionsBuilder.UseInMemoryDatabase("Scaledriven");
         }
 
     }

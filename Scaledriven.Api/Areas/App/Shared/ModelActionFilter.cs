@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc.Filters;
 using Scaledriven.Api.Database;
 
-namespace Scaledriven.Api.Shared
+namespace Scaledriven.Api.Areas.App.Shared
 {
     public class ModelActionFilter : IActionFilter
     {

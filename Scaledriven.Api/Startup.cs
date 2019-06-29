@@ -9,10 +9,10 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
-using Scaledriven.Api.Database;
 using Scaledriven.Api.Helpers;
 using Scaledriven.Api.Services;
-using Scaledriven.Api.Shared;
+using Scaledriven.Api.Areas.App.Shared;
+using Scaledriven.Api.Database;
 using Swashbuckle.AspNetCore.Swagger;
 
 namespace Scaledriven.Api

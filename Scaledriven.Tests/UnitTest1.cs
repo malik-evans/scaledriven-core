@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Xunit;
 
-namespace Scaledriven.Api.Tests
+namespace Scaledriven.Tests
 {
     public class UnitTest1 : IClassFixture<WebApplicationFactory<Startup>>
     {

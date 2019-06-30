@@ -2,7 +2,7 @@ using System;
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace Scaledriven.Api.Services
+namespace Scaledriven.Api.Areas.App.Services
 {
 
     public interface IGitHubApiService

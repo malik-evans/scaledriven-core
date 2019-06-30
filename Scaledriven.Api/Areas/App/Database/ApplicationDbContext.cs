@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using Scaledriven.Api.Models;
+using Scaledriven.Api.Areas.App.Models;
 
-namespace Scaledriven.Api.Database
+namespace Scaledriven.Api.Areas.App.Database
 {
     public class ApplicationDbContext : DbContext
     {

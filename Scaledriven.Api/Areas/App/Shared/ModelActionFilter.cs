@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc.Filters;
-using Scaledriven.Api.Database;
+using Scaledriven.Api.Areas.App.Database;
 
 namespace Scaledriven.Api.Areas.App.Shared
 {

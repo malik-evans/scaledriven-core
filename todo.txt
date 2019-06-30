@@ -1,0 +1,2 @@
+// todo Scaledriven/Scaledriven.Tests.csproj - add project reference
+// todo fix Scaledriven.Tests project loading & reference from Scaledriven.Tests.csproj

@@ -2,7 +2,7 @@
 ----
 
  - **Core** - Accumulative class library that supports neighboring projects.
- - **API** -  Root Rest Api serving applicaton data.
+ - **API** -  Root Rest Api serving application data.
  - **Client** - Client interface
  - **Tests** - Full test project for sibling projects.
 

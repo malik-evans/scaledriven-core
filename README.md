@@ -9,12 +9,24 @@
 **Downloading documentation to the environment**
 ----
 
-At the bottom the `.gitignore` file is a listing of necessary external documentation located in the `External.Docs` directory. It is recommended that from the project root you `cd ./External.Docs` directory before cloning external repositories (not modules) into this directory. 
+At the bottom the `.gitignore` file is a listing of necessary external documentation located in the `External.Docs` directory. It is recommended that from the project root you `cd ./External.Docs` directory before cloning external repositories (not modules) into this directory.
+
+**First time doing so** - Create the directory External.Docs  
+
+`mkdir External.Docs`  
+
+**Change to that directory**
+
+`cd ./External.Docs`
+
+Then clone needed documentation
 
 ```
-cd ./External.Docs
 git clone https://github.com/aspnet/AspNetCore.Docs.git AspNetCore.Docs
 git clone https://github.com/aspnet/EntityFrameworkCore.git EntityFrameworkCore
 git clone https://github.com/ngrx/platform.git ngrx
 ```
+
+And update or redo as needed. May take a while to download.
+
 Keep in mind that the `External.Docs` directory can be removed from the text editor/IDE's index so as to not bother the developer.

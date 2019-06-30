@@ -1,0 +1,21 @@
+@page
+@model Scaledriven.Client.Pages.App
+
+@{
+    Layout = "Shared/_Layout";
+}
+
+@section Base {
+    <base href="App" />
+}
+
+<app-root></app-root>
+
+@section Scripts {
+    <script type="text/javascript" src="app/runtime.js"></script>
+    <script type="text/javascript" src="app/es2015-polyfills.js" nomodule></script>
+    <script type="text/javascript" src="app/polyfills.js"></script>
+    <script type="text/javascript" src="app/vendor.js"></script>
+    <script type="text/javascript" src="app/main.js"></script>
+}
+

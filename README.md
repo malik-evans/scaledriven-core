@@ -25,6 +25,7 @@ Then clone needed documentation
 git clone https://github.com/aspnet/AspNetCore.Docs.git AspNetCore.Docs
 git clone https://github.com/aspnet/EntityFrameworkCore.git EntityFrameworkCore
 git clone https://github.com/ngrx/platform.git ngrx
+git clone https://github.com/domaindrivendev/Swashbuckle.AspNetCore.git Swashbuckle.AspNetCore
 ```
 
 And update or redo as needed. May take a while to download.

@@ -5,21 +5,31 @@ networks:
 
 services:
 
-  web:
+  api:
     image: malik393/scaledriven-api:lastest
-    container_name: scaledriven
+    container_name: scaledriven-api
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: Scaledriven.Api/Dockerfile
     ports:
-      - "5000:80"
+      - "5001:5001"
+    networks:
+      - frontend
+
+  web:
+    image: malik393/scaledriven-client:lastest
+    container_name: scaledriven-client
+    build:
+      context: .
+      dockerfile: Scaledriven.Client/Dockerfile
+    ports:
+      - "3000:3000"
     networks:
       - frontend
 
   youtrack:
     image: jetbrains/youtrack:2018.1.41826
-    container_name: youtrack
-    restart: always
+    container_name: scaledriven-youtrack
     ports:
       - "8080:8080"
     networks:

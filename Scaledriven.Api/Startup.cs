@@ -1,18 +1,18 @@
 ﻿using System;
 using System.IO;
+
 using System.Reflection;
-using System.Text;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Configuration.FileExtensions;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.IdentityModel.Tokens;
+using Scaledriven.Api.Areas.App.Database;
+using Scaledriven.Api.Areas.App.Services;
 using Scaledriven.Api.Helpers;
-using Scaledriven.Api.Services;
 using Scaledriven.Api.Areas.App.Shared;
-using Scaledriven.Api.Database;
 using Scaledriven.Core.AspNetCore.Extensions;
 using Swashbuckle.AspNetCore.Swagger;
 
@@ -25,7 +25,7 @@ namespace Scaledriven.Api
         public Startup(IHostingEnvironment env)
         {
             Configuration = new ConfigurationBuilder()
-                .SetBasePath(env.ContentRootPath)
+                .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("appsettings.json")
                 .Build();
         }
@@ -88,8 +88,6 @@ namespace Scaledriven.Api
                 .AllowAnyHeader()
                 .AllowAnyMethod());
 
-            app.UseHttpsRedirection();
-
             // Enable middleware to serve generated Swagger as a JSON endpoint.
             app.UseSwagger();
 
@@ -103,6 +101,13 @@ namespace Scaledriven.Api
 
             app.UseMvc(routes =>
                 routes.MapRoute( name: "areaRoutes", template: "{area:exists=App/Info}/{controller=Home}/{action=Index}/{id?}"));
+
+            app.Run(context =>
+            {
+                context.Response.Redirect("swagger");
+                return Task.CompletedTask;
+            });
+
 
         }
     }

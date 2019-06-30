@@ -13,6 +13,7 @@ namespace Scaledriven.Api
         public static void Main(string[] args)
         {
             CreateWebHostBuilder(args)
+                .UseUrls("http://*:5000;http://localhosts:5001;")
                 .Build()
                 .Run();
 

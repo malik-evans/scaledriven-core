@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Scaledriven.Core.AspNetCore.Extensions;
 
 namespace Scaledriven.Client
 {
@@ -26,6 +27,7 @@ namespace Scaledriven.Client
             });
             services.AddMvc();
             services.AddSpaStaticFiles(options => options.RootPath = "ClientApp/dist");
+            services.AddScaledriven();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

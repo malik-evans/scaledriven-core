@@ -1,24 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {LayoutComponent} from "./layout/layout.component";
-import {DashboardComponent} from "./dashboard/dashboard.component";
-import {UserResolver} from './user/user.model';
 
-const routes: Routes = [
-  {
-    path: "",
-    component: LayoutComponent,
-    children: [
-      {
-        path: "",
-        component: DashboardComponent,
-        resolve: {
-          users: UserResolver
-        }
-      }
-    ]
-  }
-];
+const routes: Routes = [];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

@@ -1,15 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { UserComponent } from './user.component';
 import {UserResolver} from './user.model';
 
 
 @NgModule({
-  declarations: [UserComponent],
+  declarations: [],
   imports: [
     CommonModule
   ],
   providers: [UserResolver],
-  exports: [ UserComponent]
+  exports: []
 })
 export class UserModule { }

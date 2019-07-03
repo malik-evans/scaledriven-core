@@ -16,7 +16,6 @@ namespace Scaledriven.Api
                 .UseUrls("http://*:5000;http://localhosts:5001;")
                 .Build()
                 .Run();
-
         }
     }
 }

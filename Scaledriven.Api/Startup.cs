@@ -1,23 +1,20 @@
 ﻿using System;
 using System.IO;
-
 using System.Reflection;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Configuration.FileExtensions;
 using Microsoft.Extensions.DependencyInjection;
-using Scaledriven.Api.Areas.App.Database;
-using Scaledriven.Api.Areas.App.Services;
 using Scaledriven.Api.Helpers;
-using Scaledriven.Api.Areas.App.Shared;
 using Scaledriven.Core.AspNetCore.Extensions;
+using Scaledriven.Core.Services;
 using Swashbuckle.AspNetCore.Swagger;
 
 namespace Scaledriven.Api
 {
+    // TODO inspect project for unused packages
     public class Startup
     {
         public readonly IConfigurationRoot Configuration;
@@ -34,11 +31,8 @@ namespace Scaledriven.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
             // settings
             services.Configure<AppSettings>(Configuration.GetSection("AppSettings"));
-
-            services.AddScaledriven();
 
             // configure mvc & services
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
@@ -46,11 +40,7 @@ namespace Scaledriven.Api
             // http services
             services.AddHttpClient<IGitHubApiService, GithubService>();
 
-            // middleware & filters
-            services.AddScoped<ModelActionFilter>();
-
-            // db context
-            services.AddDbContext<ApplicationDbContext>();
+            services.AddScaledriven();
 
 
             // Register the Swagger generator, defining 1 or more Swagger documents

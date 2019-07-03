@@ -1,18 +1,18 @@
 using Microsoft.EntityFrameworkCore;
-using Scaledriven.Api.Areas.App.Models;
+using Scaledriven.Core.DataAccess.Models;
 
-namespace Scaledriven.Api.Areas.App.Database
+namespace Scaledriven.Core.DataAccess
 {
-    public class ApplicationDbContext : DbContext
+    public class CoreDbContext : DbContext
     {
         public DbSet<User> Users { get; set; }
-
-        public ApplicationDbContext(DbContextOptions options) : base(options) { }
+        public CoreDbContext(DbContextOptions options) : base(options) { }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
 
+            // TODO build: primarily use mysql and if the connection fails use InMemory
             optionsBuilder.UseInMemoryDatabase("Scaledriven");
         }
 

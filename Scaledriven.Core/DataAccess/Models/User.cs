@@ -1,10 +1,9 @@
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Scaledriven.Api.Areas.App.Models
+namespace Scaledriven.Core.DataAccess.Models
 {
-
-
     public class User
     {
         [Key]
@@ -12,5 +11,14 @@ namespace Scaledriven.Api.Areas.App.Models
         public string UserId { get; set; }
 
         public string FirstName { get; set; }
+
+        public IEnumerable<User> Friends { get; set; }
+
+        public User Parent { get; set; }
+
+        public void UpdateParentName(string name)
+        {
+            Parent.FirstName = name;
+        }
     }
 }

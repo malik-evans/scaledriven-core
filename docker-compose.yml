@@ -2,8 +2,22 @@ version: "3"
 
 networks:
   frontend:
+  backend:
 
 services:
+
+  web:
+    image: wordpress
+    container_name: scaledriven-wordpress
+    restart: always
+    ports:
+      - 8080:8080
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: root
+      WORDPRESS_DB_PASSWORD: password
+      WORDPRESS_DB_NAME: scaledriven
+
 
   api:
     image: malik393/scaledriven-api:lastest
@@ -12,26 +26,39 @@ services:
       context: .
       dockerfile: Scaledriven.Api/Dockerfile
     ports:
-      - "5001:5001"
+      - 5001:5001
     networks:
       - frontend
 
-  web:
+  app:
     image: malik393/scaledriven-client:lastest
-    container_name: scaledriven-client
+    container_name: scaledriven-app
     build:
       context: .
       dockerfile: Scaledriven.Client/Dockerfile
     ports:
-      - "3000:3000"
+      - 3000:3000
     networks:
       - frontend
+
+  db:
+    image: mysql:5.7
+    restart: always
+    container_name: scaleriven-mysql
+    ports:
+      - 3306:3306
+    volumes:
+      - /var/lib/mysql
+    environment:
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: root
 
   youtrack:
     image: jetbrains/youtrack:2018.1.41826
     container_name: scaledriven-youtrack
     ports:
-      - "8080:8080"
+      - 8000:8080
     networks:
       - frontend
     volumes:

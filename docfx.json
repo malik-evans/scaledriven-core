@@ -1,0 +1,53 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": ["**/**.csproj"],
+          "exclude": [ "**/bin/**", "**/obj/**", "./External.Docs/**" ],
+          "src": "src"
+        }
+      ],
+      "dest": "docs/metadata/api"
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": ["**/*.yml", "**/*.md"],
+        "src": "docs/metadata/api",
+        "dest": "docs/api"
+      },
+      {
+        "files": ["**/*.yml", "**/*.md"],
+        "src": "docs",
+        "dest": "."
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "resources/**/*.png",
+          "resources/**/*.jpg",
+          "resources/**/*.gif",
+          "resources/**/*.svg",
+          "resources/**/*.pdf",
+          "resources/**/*.css",
+          "resources/**/*.js"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "_site/**"
+        ],
+        "src": "docs"
+      }
+    ],
+    "overwrite": "specs/*.md",
+    "globalMetadata": {
+      "_appTitle": "Scaledriven Docs",
+      "_enableSearch": true
+    },
+    "markdownEngineName": "markdig",
+    "dest": "_site"
+  }
+}

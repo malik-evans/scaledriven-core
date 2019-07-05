@@ -38,3 +38,5 @@ msbuild.wrn
 
 # External Docs
 External.Docs/
+_site/
+docs/metadata

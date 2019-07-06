@@ -7,8 +7,9 @@
     "start:portal-app":"ng serve portal-app --proxy-config proxy.conf.json",
     "build:portal-app":"ng build portal-app",
     "build": "ng build",
-    "watch": "ng watch --extract-css",
-    "watch:portal-app": "ng watch portal-app --extract-css",
+    "watch": "ng build watch --extract-css",
+    "watch:core": "ng build ---watch core",
+    "watch:portal-app": "ng build ---watch portal-app --extract-css",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

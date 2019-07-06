@@ -20,10 +20,10 @@
     ],
     "paths": {
       "core": [
-        "dist/core"
+        "node_modules/@scaledriven/core"
       ],
       "core/*": [
-        "dist/core/*"
+        "node_modules/@scaledriven/core*"
       ]
     }
   }

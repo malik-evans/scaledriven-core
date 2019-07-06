@@ -40,3 +40,4 @@ msbuild.wrn
 External.Docs/
 _site/
 docs/metadata
+dist/

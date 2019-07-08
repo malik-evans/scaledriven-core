@@ -11,31 +11,21 @@ services:
     container_name: scaledriven-wordpress
     restart: always
     ports:
-      - 8080:8080
+      - 8000:8080
     environment:
       WORDPRESS_DB_HOST: db
       WORDPRESS_DB_USER: root
       WORDPRESS_DB_PASSWORD: password
       WORDPRESS_DB_NAME: scaledriven
 
-
-  api:
-    image: malik393/scaledriven-api:lastest
-    container_name: scaledriven-api
-    build:
-      context: .
-      dockerfile: Scaledriven.Api/Dockerfile
-    ports:
-      - 5001:5001
-    networks:
-      - frontend
+  swaggergen:
+      image: swaggerapi/swagger-editor
+      ports:
+        - 8080:8080
 
   app:
-    image: malik393/scaledriven-client:lastest
+    image: malik393/scaledriven:lastest
     container_name: scaledriven-app
-    build:
-      context: .
-      dockerfile: Scaledriven.Client/Dockerfile
     ports:
       - 3000:3000
     networks:

@@ -5,7 +5,7 @@
         {
           "files": ["**/**.csproj"],
           "exclude": [ "**/bin/**", "**/obj/**", "./External.Docs/**" ],
-          "src": "src"
+          "src": "Scaledriven"
         }
       ],
       "dest": "docs/metadata/api"

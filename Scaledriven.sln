@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scaledriven", "Scaledriven\Scaledriven.csproj", "{B181B04A-C807-44C2-A713-4F5980B852E9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B181B04A-C807-44C2-A713-4F5980B852E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B181B04A-C807-44C2-A713-4F5980B852E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B181B04A-C807-44C2-A713-4F5980B852E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B181B04A-C807-44C2-A713-4F5980B852E9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

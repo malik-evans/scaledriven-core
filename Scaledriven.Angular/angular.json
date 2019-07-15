@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/app",
+            "outputPath": "../Scaledriven/wwwroot/ClientApp",
             "index": "app/src/index.html",
             "main": "app/src/main.ts",
             "polyfills": "app/src/polyfills.ts",
@@ -24,6 +24,7 @@
               "app/src/assets"
             ],
             "styles": [
+              "node_modules/semantic-ui-css/semantic.css",
               "app/src/styles.css"
             ],
             "scripts": []

@@ -1,0 +1,20 @@
+using System.Collections.Generic;
+using System.Linq;
+
+namespace Scaledriven.Services
+{
+
+    public interface IFactory<T> where T : class, new()
+    {
+        T Create();
+    }
+
+    public abstract class Factory<T> : IFactory<T> where T : class, new()
+    {
+        public abstract T Create();
+
+        public IEnumerable<T> CreateMany(int amount = 10)
+            => new T[amount].Select(m => Create());
+
+    }
+}

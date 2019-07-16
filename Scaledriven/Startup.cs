@@ -35,7 +35,7 @@ namespace Scaledriven
             services.AddTransient<SaveChangesResultFilter>();
             services.AddTransient<IFactory<User>, UserFactory<User>>();
             services.AddDbContext<ApplicationDbContext>();
-            services.AddSpaStaticFiles(c => c.RootPath = "wwwroot/ClientApp");
+            services.AddSpaStaticFiles(c => c.RootPath = "../Scaledriven.Angular/dist");
             services.Configure<CookiePolicyOptions>(options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.

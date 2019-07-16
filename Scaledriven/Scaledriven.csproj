@@ -28,6 +28,11 @@
       <_ContentIncludedByDefault Remove="Association\Pages\Index.cshtml" />
       <_ContentIncludedByDefault Remove="Association\Pages\Shared\_Layout.cshtml" />
       <_ContentIncludedByDefault Remove="Areas\Association\Views\Home\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Association\Pages\Index.cshtml" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <UpToDateCheckInput Remove="Pages\Index.cshtml" />
     </ItemGroup>
 
 </Project>

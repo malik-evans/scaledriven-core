@@ -18,7 +18,16 @@
     </ItemGroup>
 
     <ItemGroup>
+      <Folder Include="Areas" />
       <Folder Include="Design" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Pages\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Pages\Shared\_Layout.cshtml" />
+      <_ContentIncludedByDefault Remove="Association\Pages\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Association\Pages\Shared\_Layout.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Association\Views\Home\Index.cshtml" />
     </ItemGroup>
 
 </Project>

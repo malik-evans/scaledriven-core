@@ -7,6 +7,7 @@ namespace Scaledriven.Services
     public interface IFactory<T> where T : class, new()
     {
         T Create();
+        IEnumerable<T> CreateMany(int amount = 10);
     }
 
     public abstract class Factory<T> : IFactory<T> where T : class, new()

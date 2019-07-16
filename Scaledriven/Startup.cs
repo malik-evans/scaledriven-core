@@ -1,10 +1,11 @@
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Logging;
+using Scaledriven.Areas.Association;
 using Scaledriven.Config;
 using Scaledriven.Database;
 using Scaledriven.Models;
@@ -22,6 +23,7 @@ namespace Scaledriven
             Configuration = new ConfigurationBuilder()
                 .SetBasePath(env.ContentRootPath)
                 .AddJsonFile("appsettings.json", optional: false, reloadOnChange: false)
+                .AddConfiguration(AssociationServiceExtensions.Configuration)
                 .Build();
 
         }
@@ -29,6 +31,7 @@ namespace Scaledriven
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddAssociationContext();
             services.AddOptions();
             services.Configure<AuthSettings>(Configuration.GetSection("Auth"));
             services.Configure<ApiSettings>(Configuration.GetSection("Api"));
@@ -109,6 +112,10 @@ namespace Scaledriven
 
             app.UseMvc(routes =>
             {
+                routes.MapRoute(
+                    name: "area_route",
+                    template: "{area=Association}/{controller=Home}/{action=Index}/{id?}");
+
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");

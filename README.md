@@ -1,3 +1,4 @@
+
 ### Development Driven by Application Scaling
 
 ### Commit Type
@@ -14,11 +15,35 @@ Must be one of the following:
 * **style**: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
 * **test**: Adding missing tests or correcting existing tests
 
+### Getting Started
+Two projects exist within the root of this repository.
+
+* The Api - Scaledriven
+* The web Client - Scaledriven.Angular.csproj
+
+Restore package dependencies
+```
+cd Scaledriven
+dotnet restore
+```
+```
+cd Scaledriven.Angular
+npm install
+```
+
+
 ### Swagger
 Use swagger image downloaded from docker to generate api stubs for client application
 
 **Docker**
 ----------
+Docker providing interfaces for both developers and project managers can interface with docker.
+
+Access docker hub directly by visiting the toolbar.
+
+Go to `More of Docker > Docker Hub` to open the docker hub page.
+
+Download your system's docker installation from the [system installations](https://docs.docker.com/v17.12/install/#supported-platforms) page for docker system installations.
 
 **Images**
 

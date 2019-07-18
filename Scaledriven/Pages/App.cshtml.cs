@@ -1,11 +1,9 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace Scaledriven.Areas.Association.Pages
+namespace Scaledriven.Pages
 {
-    public class Index : PageModel
+    public class App : PageModel
     {
-
-
         public void OnGet()
         {
 

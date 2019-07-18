@@ -1,12 +1,31 @@
+@using Scaledriven.Pages.Shared
+@using Scaledriven.Services
+@inject ConfigurationService ConfigurationService
+@{
+    StyleOptions styleOptions = new StyleOptions();
+}
 <!DOCTYPE html>
 <html>
 <head>
     <title>@ViewData["Title"]</title>
+    <link href="app/styles.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+    <div class="ui stretched divided grid">
+        <div class="row">
+            <div class="column">
+                <nav class="ui two item top attached massive secondary pointing menu">
+                    <a class="item" asp-page="/">Home</a>
+                    <a class="item" asp-page="/App" target="_blank">App</a>
+                </nav>
+            </div>
+        </div>
 
-<h1>Hello Craft</h1>
-@RenderBody()
+        @RenderBody();
 
+        <footer class="ui center aligned bottom fixed attached segment">
+            <h1 class="header">ScaleDriven!</h1>
+        </footer>
+    </div>
 </body>
 </html>

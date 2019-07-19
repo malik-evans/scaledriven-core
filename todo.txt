@@ -1,8 +1,0 @@
-TODO fix docker file for scaledriven
-
-TODO create documentation for globally linking Scaledriven.App package - npm
-TODO wordpress db link with template strings
-
-todo feature() commit as - design project extensive functionality
-
-json output from compodoc can be indexed by docfx - consistent theme

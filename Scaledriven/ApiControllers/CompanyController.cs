@@ -1,16 +1,12 @@
 using System.Reflection;
 using Microsoft.AspNetCore.Mvc;
 using Scaledriven.Areas.Association.Database;
-using Scaledriven.Areas.Association.Design;
 using Scaledriven.Areas.Association.Service;
 
-namespace Scaledriven.Areas.Association.Api
+namespace Scaledriven.ApiControllers
 {
-    public class CompanyController : AssociationApiControllerBase
+    public class CompanyController : ControllerBase
     {
-        public CompanyController(AssociationDbContext context) : base(context)
-        {
-        }
 
         [HttpGet]
         [ProducesResponseType(typeof(MemberInfo), 200)]

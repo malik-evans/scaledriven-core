@@ -1,5 +1,5 @@
 {
-  "name": "scaledriven",
+  "name": "@scaledriven/integration",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",

@@ -3,29 +3,31 @@
   "version": 1,
   "newProjectRoot": ".",
   "projects": {
-    "app": {
+    "integration": {
       "projectType": "application",
       "schematics": {},
-      "root": "app",
-      "sourceRoot": "app/src",
+      "root": "integration",
+      "sourceRoot": "integration/src",
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "../Scaledriven/wwwroot/app",
-            "index": "app/src/index.html",
-            "main": "app/src/main.ts",
-            "polyfills": "app/src/polyfills.ts",
-            "tsConfig": "app/tsconfig.app.json",
+            "outputPath": "dist/integration",
+            "index": "integration/src/index.html",
+            "main": "integration/src/main.ts",
+            "polyfills": "integration/src/polyfills.ts",
+            "tsConfig": "integration/tsconfig.app.json",
             "aot": false,
             "assets": [
-              "app/src/favicon.ico",
-              "app/src/assets"
+              "integration/src/favicon.ico",
+              "integration/src/assets"
             ],
             "styles": [
-              "node_modules/semantic-ui-css/semantic.css",
-              "app/src/styles.css"
+              "node_modules/primeicons/primeicons.css",
+              "node_modules/primeng/resources/themes/nova-light/theme.css",
+              "node_modules/primeng/resources/primeng.min.css",
+              "integration/src/styles.css"
             ],
             "scripts": []
           },
@@ -33,8 +35,8 @@
             "production": {
               "fileReplacements": [
                 {
-                  "replace": "app/src/environments/environment.ts",
-                  "with": "app/src/environments/environment.prod.ts"
+                  "replace": "integration/src/environments/environment.ts",
+                  "with": "integration/src/environments/environment.prod.ts"
                 }
               ],
               "optimization": true,
@@ -59,34 +61,33 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "app:build",
-            "proxyConfig": "proxy.conf.json"
+            "browserTarget": "integration:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "app:build:production"
+              "browserTarget": "integration:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "app:build"
+            "browserTarget": "integration:build"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "app/src/test.ts",
-            "polyfills": "app/src/polyfills.ts",
-            "tsConfig": "app/tsconfig.spec.json",
-            "karmaConfig": "app/karma.conf.js",
+            "main": "integration/src/test.ts",
+            "polyfills": "integration/src/polyfills.ts",
+            "tsConfig": "integration/tsconfig.spec.json",
+            "karmaConfig": "integration/karma.conf.js",
             "assets": [
-              "app/src/favicon.ico",
-              "app/src/assets"
+              "integration/src/favicon.ico",
+              "integration/src/assets"
             ],
             "styles": [
-              "app/src/styles.css"
+              "integration/src/styles.css"
             ],
             "scripts": []
           }
@@ -95,9 +96,9 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "app/tsconfig.app.json",
-              "app/tsconfig.spec.json",
-              "app/e2e/tsconfig.json"
+              "integration/tsconfig.app.json",
+              "integration/tsconfig.spec.json",
+              "integration/e2e/tsconfig.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -107,16 +108,16 @@
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
-            "protractorConfig": "app/e2e/protractor.conf.js",
-            "devServerTarget": "app:serve"
+            "protractorConfig": "integration/e2e/protractor.conf.js",
+            "devServerTarget": "integration:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "app:serve:production"
+              "devServerTarget": "integration:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "app"
+  "defaultProject": "integration"
 }

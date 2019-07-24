@@ -1,20 +1,37 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {Injector, NgModule} from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import { AppIntegrationComponent } from './app-integration.component';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { UserComponent } from './user.component';
+import {createCustomElement} from "@angular/elements";
+import {Card, CardModule} from "primeng/card";
 
+
+/**
+ * Bootstraps integration component, acting as browserPolyfill,
+ * supporting the use for custom elements via entryComponents
+ */
 @NgModule({
   declarations: [
-    AppComponent
+    AppIntegrationComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    AppRoutingModule
+    CardModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  entryComponents: [UserComponent, Card],
+  bootstrap: [AppIntegrationComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+  constructor(private injector: Injector) {
+    let UserElement =  createCustomElement(UserComponent, { injector });
+    customElements.define('app-user', UserElement);
+
+    let CardElement =  createCustomElement(Card, { injector });
+    customElements.define('app-card', CardElement);
+  }
+}

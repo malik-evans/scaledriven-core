@@ -9,23 +9,30 @@
 <head>
     <title>@ViewData["Title"]</title>
     <link href="app/styles.css" rel="stylesheet" type="text/css" />
+    <base  href="/"/>
 </head>
 <body>
-    <div class="ui stretched divided grid">
-        <div class="row">
-            <div class="column">
-                <nav class="ui two item top attached massive secondary pointing menu">
-                    <a class="item" asp-page="/">Home</a>
-                    <a class="item" asp-page="/App" target="_blank">App</a>
-                </nav>
-            </div>
+<div class="ui stretched divided grid">
+    <div class="row">
+        <div class="column">
+            <nav class="ui two item top attached massive secondary pointing menu">
+                <a class="item" asp-page="/">Home</a>
+            </nav>
         </div>
-
-        @RenderBody();
-
-        <footer class="ui center aligned bottom fixed attached segment">
-            <h1 class="header">ScaleDriven!</h1>
-        </footer>
     </div>
+
+    @RenderBody();
+
+    <footer class="ui center aligned bottom fixed attached segment">
+        <h1 class="header">ScaleDriven!</h1>
+    </footer>
+
+    <integration></integration>
+    <script src="app/runtime.js"></script>
+    <script src="app/polyfills.js"></script>
+    <script src="app/scripts.js"></script>
+    <script src="app/vendor.js"></script>
+    <script src="app/main.js"></script>
+</div>
 </body>
 </html>

@@ -19,8 +19,10 @@
 
     <ItemGroup>
       <Folder Include="Areas" />
+      <Folder Include="ClientApp" />
       <Folder Include="Design" />
       <Folder Include="../Scaledriven.Angular/dist" />
+      <Folder Include="wwwroot" />
     </ItemGroup>
 
     <ItemGroup>
@@ -64,6 +66,53 @@
       <_ContentIncludedByDefault Remove="wwwroot\lib\jquery\dist\jquery.min.js" />
       <_ContentIncludedByDefault Remove="wwwroot\lib\jquery\dist\jquery.min.map" />
       <_ContentIncludedByDefault Remove="wwwroot\lib\jquery\LICENSE.txt" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\12.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\app\color.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\app\favicon.ico" />
+      <_ContentIncludedByDefault Remove="wwwroot\app\hue.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\app\index.html" />
+      <_ContentIncludedByDefault Remove="wwwroot\app\line.gif" />
+      <_ContentIncludedByDefault Remove="wwwroot\app\loading.gif" />
+      <_ContentIncludedByDefault Remove="wwwroot\app\main-es2015.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\app\main-es2015.js.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\app\main-es5.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\app\main-es5.js.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\app\open-sans-v15-latin-300.eot" />
+      <_ContentIncludedByDefault Remove="wwwroot\app\open-sans-v15-latin-300.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\app\open-sans-v15-latin-300.ttf" />
+      <_ContentIncludedByDefault Remove="wwwroot\app\open-sans-v15-latin-300.woff" />
+      <_ContentIncludedByDefault Remove="wwwroot\app\open-sans-v15-latin-300.woff2" />
+      <_ContentIncludedByDefault Remove="wwwroot\app\open-sans-v15-latin-700.eot" />
+      <_ContentIncludedByDefault Remove="wwwroot\app\open-sans-v15-latin-700.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\app\open-sans-v15-latin-700.ttf" />
+      <_ContentIncludedByDefault Remove="wwwroot\app\open-sans-v15-latin-700.woff" />
+      <_ContentIncludedByDefault Remove="wwwroot\app\open-sans-v15-latin-700.woff2" />
+      <_ContentIncludedByDefault Remove="wwwroot\app\open-sans-v15-latin-regular.eot" />
+      <_ContentIncludedByDefault Remove="wwwroot\app\open-sans-v15-latin-regular.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\app\open-sans-v15-latin-regular.ttf" />
+      <_ContentIncludedByDefault Remove="wwwroot\app\open-sans-v15-latin-regular.woff" />
+      <_ContentIncludedByDefault Remove="wwwroot\app\open-sans-v15-latin-regular.woff2" />
+      <_ContentIncludedByDefault Remove="wwwroot\app\password-meter.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\app\polyfills-es2015.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\app\polyfills-es2015.js.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\app\polyfills-es5.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\app\polyfills-es5.js.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\app\primeicons.eot" />
+      <_ContentIncludedByDefault Remove="wwwroot\app\primeicons.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\app\primeicons.ttf" />
+      <_ContentIncludedByDefault Remove="wwwroot\app\primeicons.woff" />
+      <_ContentIncludedByDefault Remove="wwwroot\app\runtime-es2015.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\app\runtime-es2015.js.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\app\runtime-es5.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\app\runtime-es5.js.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\app\scripts.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\app\scripts.js.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\app\styles.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\app\styles.css.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\app\vendor-es2015.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\app\vendor-es2015.js.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\app\vendor-es5.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\app\vendor-es5.js.map" />
     </ItemGroup>
 
     <ItemGroup>

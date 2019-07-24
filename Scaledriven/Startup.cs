@@ -39,7 +39,7 @@ namespace Scaledriven
             services.AddTransient<IFactory<User>, UserFactory<User>>();
             services.AddTransient<ConfigurationService>();
             services.AddDbContext<ApplicationDbContext>();
-            services.AddSpaStaticFiles(c => c.RootPath = "wwwroot");
+            services.AddSpaStaticFiles(c => c.RootPath = "ClientApp/dist");
             services.Configure<CookiePolicyOptions>(options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.

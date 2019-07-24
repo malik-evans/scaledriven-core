@@ -5,7 +5,10 @@
         {
           "files": ["**/**.csproj"],
           "exclude": [ "**/bin/**", "**/obj/**", "./External.Docs/**" ],
-          "src": "Scaledriven"
+          "src": "Scaledriven",
+          "properties": {
+            "TargetFramework": "netcoreapp2.2"
+          }
         }
       ],
       "dest": "docs/metadata/api"

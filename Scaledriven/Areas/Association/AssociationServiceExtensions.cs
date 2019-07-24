@@ -4,7 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Scaledriven.Areas.Association.Database;
 using Scaledriven.Areas.Association.Models;
 using Scaledriven.Areas.Association.Service;
-using Scaledriven.Services;
+using Scaledriven.Areas.Shared.Services;
 
 namespace Scaledriven.Areas.Association
 {

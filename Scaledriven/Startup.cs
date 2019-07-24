@@ -6,10 +6,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Logging;
 using Scaledriven.Areas.Association;
-using Scaledriven.Config;
-using Scaledriven.Database;
-using Scaledriven.Models;
-using Scaledriven.Services;
+using Scaledriven.Areas.Shared.Database;
+using Scaledriven.Areas.Shared.Models;
+using Scaledriven.Areas.Shared.Options;
+using Scaledriven.Areas.Shared.Services;
 using Swashbuckle.AspNetCore.Swagger;
 
 namespace Scaledriven

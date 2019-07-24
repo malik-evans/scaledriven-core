@@ -18,9 +18,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Areas" />
-      <Folder Include="ClientApp" />
-      <Folder Include="Design" />
       <Folder Include="../Scaledriven.Angular/dist" />
       <Folder Include="wwwroot" />
     </ItemGroup>
@@ -113,10 +110,20 @@
       <_ContentIncludedByDefault Remove="wwwroot\app\vendor-es2015.js.map" />
       <_ContentIncludedByDefault Remove="wwwroot\app\vendor-es5.js" />
       <_ContentIncludedByDefault Remove="wwwroot\app\vendor-es5.js.map" />
+      <_ContentIncludedByDefault Remove="Areas\Association\Pages\Pages\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Association\Pages\Pages\Shared\_Layout.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Association\Pages\Pages\Shared\_ViewImports.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Association\Pages\Shared\_Layout.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Association\Pages\Shared\_ViewImports.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Association\Views\Shared\_Layout.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Association\Views\Shared\_ViewImports.cshtml" />
     </ItemGroup>
 
     <ItemGroup>
       <UpToDateCheckInput Remove="Pages\Index.cshtml" />
+      <UpToDateCheckInput Remove="Areas\Association\Pages\Index.cshtml" />
+      <UpToDateCheckInput Remove="Areas\Association\Pages\Index.cshtml" />
+      <UpToDateCheckInput Remove="Areas\Association\Views\Home\Index.cshtml" />
     </ItemGroup>
 
 </Project>

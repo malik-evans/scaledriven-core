@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "../Scaledriven/ClientApp/dist/app",
+            "outputPath": "../Scaledriven/wwwroot/app",
             "index": "integration/src/index.html",
             "main": "integration/src/main.ts",
             "polyfills": "integration/src/polyfills.ts",

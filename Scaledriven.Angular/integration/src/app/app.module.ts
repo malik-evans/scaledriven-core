@@ -1,11 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
-import {Injector, NgModule} from '@angular/core';
+import {ApplicationRef, DoBootstrap, Injector, NgModule} from '@angular/core';
 
-import { AppIntegrationComponent } from './app-integration.component';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { UserComponent } from './user.component';
-import {createCustomElement} from "@angular/elements";
-import {Card, CardModule} from "primeng/card";
+import { createCustomElement } from "@angular/elements";
+import { UserComponent } from "./user/user.component";
+import { UserModule } from "./user/user.module";
+import { DashboardModule } from "./dashboard/dashboard.module";
+import {DashboardComponent} from "./dashboard/dashboard.component";
 
 
 /**
@@ -13,25 +14,24 @@ import {Card, CardModule} from "primeng/card";
  * supporting the use for custom elements via entryComponents
  */
 @NgModule({
-  declarations: [
-    AppIntegrationComponent,
-    UserComponent
-  ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    CardModule
+    UserModule,
+    DashboardModule
   ],
-  entryComponents: [UserComponent, Card],
-  bootstrap: [AppIntegrationComponent]
+  entryComponents: [UserComponent, DashboardComponent]
 })
-export class AppModule {
+export class AppModule implements DoBootstrap {
 
   constructor(private injector: Injector) {
+    let DashboardElement =  createCustomElement(DashboardComponent, { injector });
+    customElements.define('s-dashboard', DashboardElement);
+
     let UserElement =  createCustomElement(UserComponent, { injector });
     customElements.define('app-user', UserElement);
-
-    let CardElement =  createCustomElement(Card, { injector });
-    customElements.define('app-card', CardElement);
   }
+
+  ngDoBootstrap(appRef: ApplicationRef): void { }
+
 }

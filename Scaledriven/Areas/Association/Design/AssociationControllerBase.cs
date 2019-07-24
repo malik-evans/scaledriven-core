@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Scaledriven.Areas.Association.Database;
-using Scaledriven.Services;
+using Scaledriven.Areas.Shared.Services;
 
 namespace Scaledriven.Areas.Association.Design
 {

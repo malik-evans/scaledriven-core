@@ -1,5 +1,5 @@
+@using Scaledriven.Areas.Shared.Services
 @using Scaledriven.Pages.Shared
-@using Scaledriven.Services
 @inject ConfigurationService ConfigurationService
 @{
     StyleOptions styleOptions = new StyleOptions();
@@ -8,31 +8,28 @@
 <html>
 <head>
     <title>@ViewData["Title"]</title>
-    <link href="app/styles.css" rel="stylesheet" type="text/css" />
-    <base  href="/"/>
+    <link href="~/app/styles.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-<div class="ui stretched divided grid">
-    <div class="row">
-        <div class="column">
-            <nav class="ui two item top attached massive secondary pointing menu">
-                <a class="item" asp-page="/">Home</a>
-            </nav>
+    <div class="ui stretched divided grid">
+        <div class="row">
+            <div class="column">
+                <nav class="ui two item top attached massive secondary pointing menu">
+                    <a class="item" asp-page="/">Home</a>
+                    <app-user></app-user>
+                </nav>
+            </div>
         </div>
+        @RenderBody();
+        <footer class="ui center aligned bottom fixed attached segment">
+            <h1 class="header">ScaleDriven!</h1>
+        </footer>
     </div>
-
-    @RenderBody();
-
-    <footer class="ui center aligned bottom fixed attached segment">
-        <h1 class="header">ScaleDriven!</h1>
-    </footer>
-
-    <integration></integration>
-    <script src="app/runtime.js"></script>
-    <script src="app/polyfills.js"></script>
-    <script src="app/scripts.js"></script>
-    <script src="app/vendor.js"></script>
-    <script src="app/main.js"></script>
-</div>
+    <integration></integration> @* avoid selector error *@
+    <script src="~/app/runtime.js"></script>
+    <script src="~/app/polyfills.js"></script>
+    <script src="~/app/scripts.js"></script>
+    <script src="~/app/vendor.js"></script>
+    <script src="~/app/main.js"></script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 using System;
 using Scaledriven.Areas.Association.Models;
-using Scaledriven.Services;
+using Scaledriven.Areas.Shared.Services;
 
 namespace Scaledriven.Areas.Association.Service
 {
